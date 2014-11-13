@@ -1,9 +1,7 @@
 <?php
 
-use Zend\Loader\AutoloaderFactory;
 use Zend\Mvc\Service\ServiceManagerConfig;
 use Zend\ServiceManager\ServiceManager;
-use Zend\Stdlib\ArrayUtils;
 
 date_default_timezone_set('UTC');
 error_reporting(E_ALL | E_STRICT);
