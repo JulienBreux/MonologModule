@@ -1,0 +1,30 @@
+<?php
+
+return [
+    'monolog' => [
+        'handlers' => [
+            'main' => [
+                'type'     => 'Stream',
+                'settings' => [
+                    'path'      => 'data/log/application.log',
+                    'level'     => 'INFO',
+                    'formatter' => [
+                        'type'     => 'Line',
+                        'settings' => [
+                            'dateFormat' => 'Y n j, g:i a',
+                            'output'     => '%datetime% > %level_name% > %message% %context% %extra%' . "\n",
+                        ],
+                    ],
+                ],
+                'channels' => null,
+            ],
+            'web'  => [
+                'type'     => 'ChromePHP',
+                'settings' => [
+                    'level' => 'DEBUG',
+                ],
+                'channels' => ['web'],
+            ],
+        ],
+    ],
+];
