@@ -4,6 +4,7 @@ namespace MonologModule\Service;
 
 use Zend\ServiceManager\ServiceLocatorAwareInterface;
 use Zend\ServiceManager\ServiceLocatorAwareTrait;
+use Zend\ServiceManager\ServiceLocatorInterface;
 
 /**
  * Class MonologLoggerService
@@ -13,6 +14,16 @@ use Zend\ServiceManager\ServiceLocatorAwareTrait;
 class MonologLoggerService implements ServiceLocatorAwareInterface
 {
     use ServiceLocatorAwareTrait;
+
+    /**
+     * Constructor
+     *
+     * @param ServiceLocatorInterface $serviceLocator Service locator
+     */
+    public function __construct(ServiceLocatorInterface $serviceLocator)
+    {
+        $this->serviceLocator = $serviceLocator;
+    }
 
     /**
      * Log through channel system (by inclusion)
