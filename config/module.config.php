@@ -2,12 +2,11 @@
 
 return [
     'service_manager' => [
-        'invokables' => [
-            'MonologModule\ServiceFactory\MonologLoggerService',
+        'abstract_factories' => [
+            'MonologModule\ServiceFactory\AbstractMonologServiceFactory',
         ],
         'aliases'    => [
-            'monolog.logger' => 'MonologModule\ServiceFactory\MonologLoggerService',
-            'logger'         => 'MonologModule\ServiceFactory\MonologLoggerService',
+            'monolog' => 'MonologModule\ServiceFactory\AbstractMonologServiceFactory',
         ],
     ],
 ];
