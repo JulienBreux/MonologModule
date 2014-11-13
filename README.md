@@ -1,4 +1,4 @@
 MonologModule
 =============
 
-Zend Framework 2 Monolog Module
+Zend Framework 2 Monolog Module.
