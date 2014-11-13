@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit bootstrap="tests/bootstrap.php" colors="true">
+<phpunit bootstrap="tests/Bootstrap.php" colors="true">
     <testsuites>
         <testsuite name="Monolog Module Test Suite">
             <directory>tests/MonologModule/</directory>
         </testsuite>
     </testsuites>
-
     <filter>
-        <whitelist>
-            <directory suffix=".php">src/MonologModule/</directory>
+        <whitelist addUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">../src</directory>
         </whitelist>
+        <blacklist>
+            <directory>../vendor</directory>
+        </blacklist>
     </filter>
 </phpunit>
