@@ -1,5 +1,6 @@
 .idea/
 vendor/
+tests/TestConfig.php
 composer.phar
 phpunit.phar
 phpunit.xml
