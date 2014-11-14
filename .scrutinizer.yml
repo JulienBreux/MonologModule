@@ -1,5 +1,5 @@
 before_commands:
-    - "composer update --prefer-source"
+  - "composer update --prefer-source"
 
 tools:
   external_code_coverage: true
