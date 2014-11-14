@@ -1,6 +1,7 @@
 .idea/
 vendor/
 tests/TestConfig.php
+tests/coverage.clover
 composer.phar
 phpunit.phar
 ocular.phar
