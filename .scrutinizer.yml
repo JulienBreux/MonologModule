@@ -3,4 +3,3 @@ before_commands:
 
 tools:
   external_code_coverage: true
-  test_command: ./vendor/bin/phpunit -c phpunit.xml.dist
