@@ -3,6 +3,7 @@ vendor/
 tests/TestConfig.php
 composer.phar
 phpunit.phar
+ocular.phar
 phpunit.xml
 composer.lock
 .DS_Store
