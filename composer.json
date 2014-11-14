@@ -1,5 +1,5 @@
 {
-    "name": "monolog/monolog-zf2-module",
+    "name": "JulienBreux/MonologModule",
     "description": "Sends your logs to files, sockets, inboxes, databases and various web services with Zend Framework 2",
     "keywords": ["monolog", "zf2", "Zend Framework 2", "log", "logging", "psr-3"],
     "homepage": "http://github.com/JulienBreux/MonologModule",
